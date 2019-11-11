@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DoVui</string>
+    <string name="choimoi">Chơi mới</string>
+    <string name="luatchoi">Luật chơi</string>
+    <string name="diemcao">Điểm cao</string>
+    <string name="caidat">Cài đặt</string>
+    <string name="thoat">Thoát</string>
+</resources>

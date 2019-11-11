@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/img_xoay"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:srcCompat="@drawable/anh" />
+
+        <ImageView
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/logo3" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:textColor="@color/red"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/button"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_home"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/choimoi"
+            android:textSize="28sp" />
+
+        <Button
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_home"
+            android:layout_marginBottom="8dp"
+            android:textSize="28sp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:id="@+id/button2"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="@string/luatchoi" />
+
+        <Button
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_home"
+            android:layout_marginBottom="8dp"
+            android:textSize="28sp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:id="@+id/button3"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="@string/diemcao" />
+
+        <Button
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_home"
+            android:layout_marginBottom="8dp"
+            android:textSize="28sp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:id="@+id/button4"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="@string/caidat" />
+
+        <Button
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_home"
+            android:textSize="28sp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:id="@+id/button5"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="@string/thoat" />
+    </LinearLayout>
+</LinearLayout>
