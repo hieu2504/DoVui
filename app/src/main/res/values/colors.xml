@@ -7,4 +7,6 @@
     <color name="black">#707070</color>
     <color name="white">#FFFFFF</color>
     <color name="red">#F80000</color>
+    <color name="cam">#FF9100</color>
+    <color name="chu_den">#2E2B2B</color>
 </resources>

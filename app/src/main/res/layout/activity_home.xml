@@ -13,6 +13,15 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:layout_margin="8dp"
+            android:layout_gravity="right"
+            android:id="@+id/img_sould"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/amthanh" />
+
+        <ImageView
+            android:layout_marginTop="32dp"
             android:layout_gravity="center"
             android:id="@+id/img_xoay"
             android:layout_width="350dp"
@@ -47,6 +56,7 @@
             android:textSize="28sp" />
 
         <Button
+            android:onClick="btn_luatchoi"
             android:textColor="@color/red"
             android:layout_gravity="center"
             android:background="@drawable/btn_home"
@@ -70,19 +80,9 @@
             android:layout_height="wrap_content"
             android:text="@string/diemcao" />
 
-        <Button
-            android:textColor="@color/red"
-            android:layout_gravity="center"
-            android:background="@drawable/btn_home"
-            android:layout_marginBottom="8dp"
-            android:textSize="28sp"
-            android:fontFamily="@font/roboto_condensed_bold"
-            android:id="@+id/button4"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:text="@string/caidat" />
 
         <Button
+            android:onClick="btn_Thoat"
             android:textColor="@color/red"
             android:layout_gravity="center"
             android:background="@drawable/btn_home"

@@ -5,4 +5,7 @@
     <string name="diemcao">Điểm cao</string>
     <string name="caidat">Cài đặt</string>
     <string name="thoat">Thoát</string>
+    <string name="luat1">- Người chơi sẽ có câu hỏi và 4 phương   án để chọn</string>
+    <string name="luat2">- Được phép trả lời sai 3 lần</string>
+    <string name="luat3">- Nếu trả lời sai đến lần thứ 4 lượt chơi    sẽ kết thúc và hệ thống sẽ tính điểm</string>
 </resources>
