@@ -1,12 +1,15 @@
-package vn.com.dovui;
+package vn.com.dovui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import vn.com.dovui.R;
 
 public class LuatChoiActivity extends AppCompatActivity {
 
@@ -27,6 +30,9 @@ public class LuatChoiActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
 
     }
 

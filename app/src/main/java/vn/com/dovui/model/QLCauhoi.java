@@ -1,4 +1,4 @@
-package vn.com.dovui;
+package vn.com.dovui.model;
 
 public class QLCauhoi {
 

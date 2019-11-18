@@ -6,91 +6,93 @@
     android:layout_height="match_parent"
     android:background="@color/bg"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    tools:context=".activity.HomeActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="410dp">
 
         <ImageView
-            android:layout_margin="8dp"
-            android:layout_gravity="right"
             android:id="@+id/img_sould"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
             app:srcCompat="@drawable/amthanh" />
 
         <ImageView
-            android:layout_marginTop="32dp"
-            android:layout_gravity="center"
             android:id="@+id/img_xoay"
             android:layout_width="350dp"
             android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
             app:srcCompat="@drawable/anh" />
 
         <ImageView
-            android:layout_marginBottom="8dp"
-            android:layout_gravity="center"
             android:id="@+id/imageView2"
             android:layout_width="360dp"
             android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
             app:srcCompat="@drawable/logo3" />
     </FrameLayout>
 
     <LinearLayout
-        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:orientation="vertical">
 
         <Button
-            android:textColor="@color/red"
-            android:layout_marginBottom="8dp"
-            android:layout_gravity="center"
             android:id="@+id/button"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/btn_home"
             android:fontFamily="@font/roboto_condensed_bold"
+            android:onClick="btn_choiMoi"
             android:text="@string/choimoi"
+            android:textColor="@color/red"
             android:textSize="28sp" />
 
         <Button
-            android:onClick="btn_luatchoi"
-            android:textColor="@color/red"
-            android:layout_gravity="center"
-            android:background="@drawable/btn_home"
-            android:layout_marginBottom="8dp"
-            android:textSize="28sp"
-            android:fontFamily="@font/roboto_condensed_bold"
             android:id="@+id/button2"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
-            android:text="@string/luatchoi" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_home"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:onClick="btn_luatchoi"
+            android:text="@string/luatchoi"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
 
         <Button
-            android:textColor="@color/red"
-            android:layout_gravity="center"
-            android:background="@drawable/btn_home"
-            android:layout_marginBottom="8dp"
-            android:textSize="28sp"
-            android:fontFamily="@font/roboto_condensed_bold"
+            android:onClick="btn_diemCao"
             android:id="@+id/button3"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
-            android:text="@string/diemcao" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_home"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/diemcao"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
 
 
         <Button
-            android:onClick="btn_Thoat"
-            android:textColor="@color/red"
-            android:layout_gravity="center"
-            android:background="@drawable/btn_home"
-            android:textSize="28sp"
-            android:fontFamily="@font/roboto_condensed_bold"
             android:id="@+id/button5"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
-            android:text="@string/thoat" />
+            android:layout_gravity="center"
+            android:background="@drawable/btn_home"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:onClick="btn_Thoat"
+            android:text="@string/thoat"
+            android:textColor="@color/red"
+            android:textSize="28sp" />
     </LinearLayout>
 </LinearLayout>

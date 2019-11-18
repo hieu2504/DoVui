@@ -1,4 +1,4 @@
-package vn.com.dovui;
+package vn.com.dovui.sqlite;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import vn.com.dovui.model.QLCauhoi;
 
 public class QLCauHoiDAO {
 

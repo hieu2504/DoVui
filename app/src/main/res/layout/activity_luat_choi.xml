@@ -7,7 +7,7 @@
     android:background="@color/bg"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".LuatChoiActivity">
+    tools:context=".activity.LuatChoiActivity">
 
 
     <FrameLayout
@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/img_luatchoi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:srcCompat="@drawable/btn_back_24dp"
             tools:ignore="VectorDrawableCompat" />
     </FrameLayout>
@@ -29,6 +29,7 @@
         android:layout_height="250dp"
         app:srcCompat="@drawable/luat" />
     <TextView
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
         android:gravity="center"
         android:textAllCaps="true"
@@ -38,23 +39,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
 <TextView
+    android:id="@+id/abc"
     android:lineHeight="34dp"
     android:padding="8dp"
-    android:textSize="26sp"
+    android:textSize="24sp"
     android:textColor="@color/chu_den"
     android:text="@string/luat1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
     <TextView
         android:padding="8dp"
-        android:textSize="26sp"
+        android:textSize="24sp"
         android:textColor="@color/chu_den"
         android:text="@string/luat2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <TextView
         android:padding="8dp"
-        android:textSize="26sp"
+        android:textSize="24sp"
         android:textColor="@color/chu_den"
         android:text="@string/luat3"
         android:layout_width="match_parent"

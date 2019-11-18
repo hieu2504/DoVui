@@ -1,4 +1,4 @@
-package vn.com.dovui;
+package vn.com.dovui.sqlite;
 
 import android.content.Context;
 import android.database.SQLException;

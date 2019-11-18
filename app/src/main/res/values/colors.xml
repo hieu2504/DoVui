@@ -8,5 +8,8 @@
     <color name="white">#FFFFFF</color>
     <color name="red">#F80000</color>
     <color name="cam">#FF9100</color>
+    <color name="camnhat">#FFE477</color>
+
+    <color name="cam_dam">#FF9200</color>
     <color name="chu_den">#2E2B2B</color>
 </resources>

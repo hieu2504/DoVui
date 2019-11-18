@@ -1,21 +1,18 @@
-package vn.com.dovui;
+package vn.com.dovui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import java.io.IOException;
-import java.util.List;
+import vn.com.dovui.fragment.CMoiFragment;
+import vn.com.dovui.R;
+import vn.com.dovui.sqlite.DoVuiSqlite;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -145,5 +142,19 @@ public class HomeActivity extends AppCompatActivity {
                 mediaPlayer.start();
             }
         });
+    }
+
+    public void btn_choiMoi(View view) {
+        Intent intent = new Intent(this, ChoiMoiActivity.class);
+        CMoiFragment.diem=0;
+        CMoiFragment.dongu=3;
+        startActivity(intent);
+        finish();
+    }
+
+    public void btn_diemCao(View view) {
+        Intent intent = new Intent(this, DiemCaoActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

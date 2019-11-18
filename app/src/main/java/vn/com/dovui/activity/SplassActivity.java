@@ -1,15 +1,15 @@
-package vn.com.dovui;
+package vn.com.dovui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import vn.com.dovui.R;
 
 public class SplassActivity extends AppCompatActivity {
 

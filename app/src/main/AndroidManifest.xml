@@ -11,13 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/App">
-        <activity android:name=".ChoiMoiActivity"></activity>
-        <activity android:name=".LuatChoiActivity" />
+        <activity android:name=".activity.DiemCaoActivity"></activity>
+        <activity android:name=".activity.ChoiMoiActivity" />
+        <activity android:name=".activity.LuatChoiActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activity.HomeActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".SplassActivity"
+            android:name=".activity.SplassActivity"
             android:theme="@style/App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
