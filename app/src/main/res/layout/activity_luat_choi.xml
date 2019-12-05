@@ -23,43 +23,55 @@
     </FrameLayout>
 
     <ImageView
-        android:layout_gravity="center"
         android:id="@+id/imageView3"
         android:layout_width="250dp"
         android:layout_height="250dp"
+        android:layout_gravity="center"
         app:srcCompat="@drawable/luat" />
+
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
         android:gravity="center"
-        android:textAllCaps="true"
         android:text="@string/luatchoi"
-        android:textSize="36sp"
+        android:textAllCaps="true"
         android:textColor="@color/cam"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></TextView>
-<TextView
-    android:id="@+id/abc"
-    android:lineHeight="34dp"
-    android:padding="8dp"
-    android:textSize="24sp"
-    android:textColor="@color/chu_den"
-    android:text="@string/luat1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+        android:textSize="36sp"></TextView>
+
     <TextView
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineHeight="34dp"
         android:padding="8dp"
-        android:textSize="24sp"
+        android:text="@string/luat1"
         android:textColor="@color/chu_den"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
         android:text="@string/luat2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:padding="8dp"
-        android:textSize="24sp"
         android:textColor="@color/chu_den"
-        android:text="@string/luat3"
+        android:textSize="24sp" />
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/luat3"
+        android:textColor="@color/chu_den"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/luat4"
+        android:textColor="@color/chu_den"
+        android:textSize="24sp" />
 
 </LinearLayout>

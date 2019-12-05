@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import vn.com.dovui.R;
 
@@ -20,6 +21,8 @@ public class SaiFragment extends Fragment {
 
     private View rootView;
     private Button btn_sai;
+    private TextView tv_sai_SaiFragment;
+    public static int sai=0;
     public SaiFragment() {
         // Required empty public constructor
     }
@@ -39,6 +42,11 @@ public class SaiFragment extends Fragment {
 
             }
         });
+        if(sai==1){
+            tv_sai_SaiFragment.setText("Hết giời rồi!!");
+        }else {
+            tv_sai_SaiFragment.setText("Sai rồi !");
+        }
 
         return rootView;
     }
@@ -56,6 +64,7 @@ public class SaiFragment extends Fragment {
 
     private void initView(){
         btn_sai=rootView.findViewById(R.id.btn_lai_SaiFragmet);
+        tv_sai_SaiFragment=rootView.findViewById(R.id.tv_sai_SaiFragment);
     }
 
 }

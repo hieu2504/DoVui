@@ -43,7 +43,7 @@ public class QLCauHoiDAO {
                     QLCauhoi qlCauhoi=new QLCauhoi();
 
                     qlCauhoi.setMacauhoi(Integer.parseInt(cursor.getString(cursor.getColumnIndex(MACAUHOI))));
-                    qlCauhoi.setCauhoi(cursor.getString(cursor.getColumnIndex(CAUHOI)));
+                    qlCauhoi.setCauhoi(cursor.getString(cursor.getColumnIndex(CAUHOI)).trim());
                     qlCauhoi.setAn_A(cursor.getString(cursor.getColumnIndex(COL_A)));
                     qlCauhoi.setAn_B(cursor.getString(cursor.getColumnIndex(COL_B)));
                     qlCauhoi.setAn_C(cursor.getString(cursor.getColumnIndex(COL_C)));

@@ -17,6 +17,7 @@ import vn.com.dovui.sqlite.QLDiemDAO;
 
 public class DiemCaoActivity extends AppCompatActivity {
 
+    private long backPressedTime;
     private RecyclerView rcView;
     private List<QLDiem> qlDiemList;
     private DiemAdapter diemAdapter;
@@ -43,6 +44,20 @@ public class DiemCaoActivity extends AppCompatActivity {
     public void back_home(View view) {
         Intent intent=new Intent(this,HomeActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_cmoi,
+                R.anim.slide_out_cmoi);
         finish();
+    }
+
+    // không cho back lại activity trc
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 1 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            return;
+        } else {
+        }
+
+        backPressedTime = System.currentTimeMillis();
     }
 }

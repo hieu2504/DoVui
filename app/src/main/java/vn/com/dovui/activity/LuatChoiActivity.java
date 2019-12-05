@@ -27,6 +27,8 @@ public class LuatChoiActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(LuatChoiActivity.this, HomeActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_cmoi,
+                        R.anim.slide_out_cmoi);
                 finish();
             }
         });

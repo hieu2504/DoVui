@@ -10,11 +10,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import vn.com.dovui.fragment.TinhDiemFragment;
 import vn.com.dovui.fragment.CMoiFragment;
 import vn.com.dovui.fragment.DungFragment;
 import vn.com.dovui.R;
 import vn.com.dovui.fragment.SaiFragment;
+import vn.com.dovui.model.Check;
 
 public class ChoiMoiActivity extends AppCompatActivity implements CMoiFragment.CmoiFragmentListener {
 
@@ -22,10 +26,12 @@ public class ChoiMoiActivity extends AppCompatActivity implements CMoiFragment.C
     private ImageView img_back;
     private long backPressedTime;
     DungFragment dungFragment;
+    public static List<Check> checkList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choi_moi);
+        checkList=new ArrayList<>();
 
         img_back=findViewById(R.id.img_back_luatchoi);
         img_back.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +39,8 @@ public class ChoiMoiActivity extends AppCompatActivity implements CMoiFragment.C
             public void onClick(View view) {
                 Intent intent=new Intent(ChoiMoiActivity.this, HomeActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_cmoi,
+                        R.anim.slide_out_cmoi);
                 finish();
             }
         });

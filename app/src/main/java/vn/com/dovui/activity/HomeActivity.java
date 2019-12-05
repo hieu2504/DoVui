@@ -19,7 +19,6 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-
         if (mediaPlayer != null) {
             mediaPlayer.pause();
         }
@@ -33,50 +32,50 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-            mediaPlayer.start();
+        mediaPlayer.start();
     }
 
     private long backPressedTime;
-    private ImageView img,img_sould;
+    private ImageView img, img_sould;
     private MediaPlayer mediaPlayer;
     public static int nhac;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        img_sould=findViewById(R.id.img_sould);
+        img_sould = findViewById(R.id.img_sould);
 
         // khởi tạo database
         DoVuiSqlite doVuiSqlite = new DoVuiSqlite(this);
         doVuiSqlite.createDataBase();
-        if(nhac==0){
+        if (nhac == 0) {
             playnhac();
         }
-        if(nhac==0){
+        if (nhac == 0) {
             img_sould.setImageResource(R.drawable.amthanh);
-        }else {
+        } else {
             img_sould.setImageResource(R.drawable.tatam);
         }
-
 
         img_sould.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 try {
-                    if(mediaPlayer.isPlaying() == true || nhac==0){
+                    if (mediaPlayer.isPlaying() == true || nhac == 0) {
                         img_sould.setImageResource(R.drawable.tatam);
                         mediaPlayer.pause();
-                        nhac=1;
-                    }else {
+                        nhac = 1;
+                    } else {
                         img_sould.setImageResource(R.drawable.amthanh);
                         playnhac();
-                        nhac=0;
+                        nhac = 0;
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
                     img_sould.setImageResource(R.drawable.amthanh);
                     playnhac();
-                    nhac=0;
+                    nhac = 0;
                 }
 
 
@@ -146,8 +145,9 @@ public class HomeActivity extends AppCompatActivity {
 
     public void btn_choiMoi(View view) {
         Intent intent = new Intent(this, ChoiMoiActivity.class);
-        CMoiFragment.diem=0;
-        CMoiFragment.dongu=3;
+        CMoiFragment.diem = 0;
+        CMoiFragment.dongu = 3;
+        CMoiFragment.cauhoi=0;
         startActivity(intent);
         finish();
     }
