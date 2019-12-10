@@ -40,38 +40,52 @@
         android:textColor="@color/cam"
         android:textSize="36sp"></TextView>
 
-    <TextView
-        android:id="@+id/abc"
+    <ImageView
+        android:layout_marginTop="-10dp"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lineHeight="34dp"
-        android:padding="8dp"
-        android:text="@string/luat1"
-        android:textColor="@color/chu_den"
-        android:textSize="24sp" />
+        app:srcCompat="@drawable/luatchoi" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/luat2"
-        android:textColor="@color/chu_den"
-        android:textSize="24sp" />
+    <!--<LinearLayout-->
+<!--    android:padding="8dp"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/luat3"
-        android:textColor="@color/chu_den"
-        android:textSize="24sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/luat4"
-        android:textColor="@color/chu_den"
-        android:textSize="24sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/abc"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:lineHeight="34dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="@string/luat1"-->
+<!--        android:textColor="@color/chu_den"-->
+<!--        android:textSize="20sp" />-->
 
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="@string/luat2"-->
+<!--        android:textColor="@color/chu_den"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="@string/luat3"-->
+<!--        android:textColor="@color/chu_den"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="@string/luat4"-->
+<!--        android:textColor="@color/chu_den"-->
+<!--        android:textSize="20sp" />-->
+<!--</LinearLayout>-->
 </LinearLayout>

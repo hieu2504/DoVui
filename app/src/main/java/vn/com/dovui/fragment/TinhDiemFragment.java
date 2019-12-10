@@ -27,9 +27,8 @@ import vn.com.dovui.model.QLDiem;
 public class TinhDiemFragment extends Fragment {
 
 
-
     private View rootView;
-    private TextView tv_diem,tv_tongdiem;
+    private TextView tv_diem, tv_tongdiem;
     private EditText edt_name;
     private Button btn_tinhDiem;
     private QLDiem qlDiem;
@@ -47,10 +46,10 @@ public class TinhDiemFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        rootView= inflater.inflate(R.layout.fragment_tinh_diem, container, false);
+        rootView = inflater.inflate(R.layout.fragment_tinh_diem, container, false);
         initView();
 
-        Typeface typeface=Typeface.createFromAsset(getActivity().getAssets(),"UVNBanhMi.TTF");
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "UVNBanhMi.TTF");
         tv_diem.setTypeface(typeface);
         tv_tongdiem.setTypeface(typeface);
         tv_tongdiem.setText(String.valueOf(CMoiFragment.diem));
@@ -59,22 +58,22 @@ public class TinhDiemFragment extends Fragment {
         btn_tinhDiem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name=edt_name.getText().toString().trim();
-                if(name.equals("")){
-                    Toast.makeText(getActivity(),"Hãy nhập tên của bạn vào !",Toast.LENGTH_SHORT).show();
-                }else {
+                String name = edt_name.getText().toString().trim();
+                if (name.equals("")) {
+                    Toast.makeText(getActivity(), "Hãy nhập tên của bạn vào !", Toast.LENGTH_SHORT).show();
+                } else {
                     qlDiem.setName(name);
-                    qlDiem.setSothutu(qlDiemList.size()+1);
+                    qlDiem.setSothutu(qlDiemList.size() + 1);
                     qlDiem.setDiem(Integer.parseInt(tv_tongdiem.getText().toString()));
 
-                    long result=qlDiemDAO.insertDiem(qlDiem);
-                    if(result>0){
-                        Intent intent=new Intent(getActivity(), HomeActivity.class);
+                    long result = qlDiemDAO.insertDiem(qlDiem);
+                    if (result > 0) {
+                        Intent intent = new Intent(getActivity(), HomeActivity.class);
                         startActivity(intent);
                         getActivity().finish();
 
-                    }else {
-                        Toast.makeText(getActivity(),"Thêm thất bại",Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getActivity(), "Thêm thất bại", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -87,7 +86,7 @@ public class TinhDiemFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        Log.e("ontack","onActach");
+        Log.e("ontack", "onActach");
         if (context instanceof CMoiFragment.CmoiFragmentListener) {
             mListtenner = (CMoiFragment.CmoiFragmentListener) context;
         } else {
@@ -96,17 +95,16 @@ public class TinhDiemFragment extends Fragment {
         }
     }
 
-    private void initView(){
-        tv_diem=rootView.findViewById(R.id.tv_diem_TDFragment);
-        tv_tongdiem=rootView.findViewById(R.id.tv_tongdiem_TDFragment);
-        edt_name=rootView.findViewById(R.id.edt_name);
-        btn_tinhDiem=rootView.findViewById(R.id.btn_tinhDiem);
-        qlDiem=new QLDiem();
-        qlDiemDAO=new QLDiemDAO(getActivity());
-        qlDiemList=qlDiemDAO.getAll();
+    private void initView() {
+        tv_diem = rootView.findViewById(R.id.tv_diem_TDFragment);
+        tv_tongdiem = rootView.findViewById(R.id.tv_tongdiem_TDFragment);
+        edt_name = rootView.findViewById(R.id.edt_name);
+        btn_tinhDiem = rootView.findViewById(R.id.btn_tinhDiem);
+        qlDiem = new QLDiem();
+        qlDiemDAO = new QLDiemDAO(getActivity());
+        qlDiemList = qlDiemDAO.getAll();
 
     }
-
 
 
 }

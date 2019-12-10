@@ -31,8 +31,13 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onRestart() {
+        if(nhac==1){
+            mediaPlayer.pause();
+        }else {
+            mediaPlayer.start();
+        }
         super.onRestart();
-        mediaPlayer.start();
+
     }
 
     private long backPressedTime;
@@ -131,10 +136,8 @@ public class HomeActivity extends AppCompatActivity {
     public void playnhac() {
         if (mediaPlayer == null) {
             mediaPlayer = MediaPlayer.create(HomeActivity.this, R.raw.nhacnen);
-
         }
         mediaPlayer.start();
-
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
@@ -148,6 +151,7 @@ public class HomeActivity extends AppCompatActivity {
         CMoiFragment.diem = 0;
         CMoiFragment.dongu = 3;
         CMoiFragment.cauhoi=0;
+        CMoiFragment.mienphi=1;
         startActivity(intent);
         finish();
     }
