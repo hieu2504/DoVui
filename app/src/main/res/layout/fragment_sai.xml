@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="242dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/chat2"
+            android:background="@drawable/chat3"
             android:gravity="center"
             android:text="@string/sairoi"
             android:textSize="16dp" />

@@ -229,12 +229,17 @@ public class CMoiFragment extends Fragment {
 
             @Override
             public void onFinish() {
-                if (tv_cauhoi.getText().toString().equals("30/30")) {
-                    mListtenner.onClickTinhDiem();
-                } else {
+                try {
+                    if (tv_cauhoi.getText().toString().equals("30/30")) {
+                        mListtenner.onClickTinhDiem();
+                    }
                     SaiFragment.sai = 1;
                     mListtenner.onClickSai();
+                }catch (Exception e){
+                    e.printStackTrace();
                 }
+
+
 
 
             }
